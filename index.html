@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regForm</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="display_data"></div>
+    <button class="start-btn">Начать</button>
+
+    <div class="modal-container"></div>
+    
+
+
+    <div class="form-wrapp">
+        <h3>Регистрация</h3>
+        <span class="close"></span>
+
+        <form id="myForm"> 
+            <div class="in-elems">
+                <div class="row">
+                    <div class="in-area">
+                        <label for="name">First Name</label>
+                        <input 
+                            id="name"
+                            type='text' 
+                            placeholder='David'
+                            value=""
+                        />
+                    </div>
+
+                    <div class="in-area">
+                        <label for="lastName">Last Name</label>
+                        <input 
+                            id="lastName"
+                            type='text' 
+                            placeholder='Parker'
+                            value=""
+                        />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="in-area">
+                        <label for="email">Email</label>
+                        <input 
+                            id="email"
+                            type='email' 
+                            placeholder='test@mail.com'
+                            value=""
+                        /> 
+                    </div>
+
+                    <div class="in-area">
+                        <label for="phone">Your Phone</label>
+                        <input 
+                            id="phone"
+                            type='phone' 
+                            placeholder='+4 (555) 555-5555'
+                            value=""
+                        />
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="in-area">
+                        <label for="pswrd">Password</label>
+                        <input 
+                            id="pswrd"
+                            type='password' 
+                            placeholder='Password'
+                            value=""
+                        />
+                    </div>
+
+                    <div class="in-area">
+                        <label for="conf_pswrd">Confirm Password</label>  
+                        <input 
+                            id="conf_pswrd"
+                            type='password'  
+                            placeholder='Password'
+                            value=""
+                        />
+                    </div>
+                </div>
+            </div>
+            
+
+            <button type="button" 
+                class="reg-btn"
+            >Отправить</button>
+
+        </form>
+    </div>
+
+    
+
+    <!--
+    <div class="form-wrapper">
+        <div class="f-top">
+            <h3 className="text-xl font-bold">Войти в аккаунт</h3>
+            <span>exit</span>
+        </div>
+        <div className="f-bottom">
+            <form>
+                <input 
+                    id="email"
+                    type='email' 
+                    placeholder='E-mail'
+                />
+                <input 
+                    id="password"
+                    type='password'  
+                    placeholder='Пароль' 
+                />
+            </form>
+            <button className="mb-2 mt-3 block w-full bg-[#1198F8] cursor-pointer rounded-3xl py-2.5 text-white font-bold "
+            >Войти</button>
+        </div>
+        
+    </div>-->
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
